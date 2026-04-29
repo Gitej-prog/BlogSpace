@@ -2,7 +2,7 @@
 
 A modern, fully-featured blog platform built with **React 18**, **Redux Toolkit**, and **Context API**, styled with **Tailwind CSS**.
 
-🌐 **Live Demo:** `https://<your-deployment-url>` *(replace after deployment)*
+🌐 **Live Demo:** "https://lively-sand-0994e0100.7.azurestaticapps.net/"
 
 ---
 
@@ -44,7 +44,7 @@ A modern, fully-featured blog platform built with **React 18**, **Redux Toolkit*
 
 ```bash
 # 1. Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/Gitej-prog/BlogSpace
 cd blog-app
 
 # 2. Install dependencies
@@ -73,11 +73,6 @@ Redux manages **application-wide state that needs to be shared broadly and modif
 | `uiSlice` | Search query, category filter, sort order, view mode (grid/list) |
 
 **Why Redux here?** The posts are the core data of the application — read by the Home page, updated from the PostDetail and EditPost pages, and deleted from BlogCard components anywhere in the tree. Redux's predictable unidirectional data flow and DevTools support make this ideal.
-
-**localStorage persistence** is implemented via `store.subscribe()`, so data survives page refreshes without a backend.
-
-### Context API
-Context manages **cross-cutting concerns that affect the entire app but don't need Redux's power**:
 
 | Context | Responsibility |
 |---|---|
